@@ -10,3 +10,7 @@ Colocar qualquer texto aqui.
 
 Mais texto para colocar aqui
 Alteração da develop
+
+# Como me sinto aprendendo Git?
+
+É mais tranquilo do que imaginei :D
