@@ -4,9 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dados pessoais</title>
 </head>
 <body>
     
+    <div>
+        <h1 id="title">Dados pessoais</h1>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label>Endereço</label>
+                <input type="text" name="Endereço" id="Endereço">
+            </div>
+
+            <div class="campo">
+                <label>Cidade</label>
+                <input type="text" name="Cidade" id="Cidade">
+            </div>
+
+            <div class="campo">
+                <label>Estado</label>
+                <select id="Estado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espirito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do  Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Pernanbuco</option>
+                    <option>Piaui</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" name="email" id="email"> 
+            </div>
+        </fieldset>
+    </form>
+
+    <div>
+        <h1>Dados pessoais</h1>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label>Natureza do Cargo</label> <br>
+                <label>
+                    <input type="radio" name="Cargo" value="Cargo">Gerência
+                </label>
+                <label>
+                    <input type="radio" name="Cargo" value="Cargo">Financeiro
+                </label>
+                <label>
+                    <input type="radio" name="Cargo" value="Cargo">Recepção
+                </label>
+                <label>
+                    <input type="radio" name="Cargo" value="Cargo">Administrativo
+                </label>
+                <label>
+                    <input type="radio" name="Cargo" value="Cargo">Juridico
+                </label>
+            </div>
+            <br>
+
+            <div> 
+                <label>Área de interesse</label> <br>
+                <input type="checkbox" id="area1" name="area1" value="Computação">
+                <label for="area1">Computação</label>
+                <input type="checkbox" id="area2" name="area2" value="Biologia">
+                <label for="area2">Biologia</label>
+                <input type="checkbox" id="area3" name="area3" value="Meio Ambiente">
+                <label for="area3">Meio Ambiente</label>
+                <input type="checkbox" id="area4" name="area4" value="Engenharia">
+                <label for="area4">Engenharia</label>
+                <input type="checkbox" id="area5" name="area5" value="História">
+                <label for="area5">História</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Mini-curriculo:</label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button type="submit">Concluido</button>
+    </form>
+
 </body>
 </html>
