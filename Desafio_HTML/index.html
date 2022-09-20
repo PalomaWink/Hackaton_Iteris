@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados pessoais</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"
+    <title></title>
 </head>
 <body>
     
@@ -16,22 +17,22 @@
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
             <div class="campo">
-                <label>Endereço</label>
-                <input type="text" name="Endereço" id="Endereço">
+                <label for="email"><strong>Endereço</strong></label>
+                <input type="text" name="Endereço" id="Endereço" required>
             </div>
 
             <div class="campo">
-                <label>Cidade</label>
-                <input type="text" name="Cidade" id="Cidade">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="text" name="Cidade" id="Cidade" required>
             </div>
 
             <div class="campo">
-                <label>Estado</label>
+                <label for="estado"><strong>Estado</strong></label required>
                 <select id="Estado">
                     <option selected disabled value="">Selecione</option>
                     <option>Acre</option>
@@ -63,21 +64,21 @@
             </div>
 
             <div class="campo">
-                <label>Email</label>
-                <input type="email" name="email" id="email"> 
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required> 
             </div>
         </fieldset>
     </form>
 
     <div>
-        <h1>Dados pessoais</h1>
+        <h1 id="title">Dados Profissionais</h1>
         <br>
     </div>
 
     <form>
         <fieldset class="grupo">
             <div>
-                <label>Natureza do Cargo</label> <br>
+                <label><strong>Natureza do Cargo</strong></label> <br>
                 <label>
                     <input type="radio" name="Cargo" value="Cargo">Gerência
                 </label>
@@ -97,7 +98,7 @@
             <br>
 
             <div> 
-                <label>Área de interesse</label> <br>
+                <label><strong>Área de interesse</strong></label> <br>
                 <input type="checkbox" id="area1" name="area1" value="Computação">
                 <label for="area1">Computação</label>
                 <input type="checkbox" id="area2" name="area2" value="Biologia">
@@ -113,11 +114,14 @@
 
         <div>
             <br>
-            <label>Mini-curriculo:</label>
+            <label><strong>Mini-curriculo:</strong></label>
+        </div>
+
+        <div>
             <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
         </div>
 
-        <button type="submit">Concluido</button>
+        <button class="botao" type="submit">Concluido</button>
     </form>
 
 </body>
